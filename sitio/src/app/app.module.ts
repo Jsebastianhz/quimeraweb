@@ -2,9 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { BodyComponent } from './paginas/body/body.component';
+import { SobremiComponent } from './paginas/sobremi/sobremi.component';
 
 
 
@@ -13,6 +15,7 @@ import { BodyComponent } from './paginas/body/body.component';
     AppComponent,
     HeaderComponent,
     BodyComponent,
+    SobremiComponent,
 
 
   ],
@@ -21,6 +24,8 @@ import { BodyComponent } from './paginas/body/body.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
+
 })
 export class AppModule { }
