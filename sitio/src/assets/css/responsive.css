@@ -1,0 +1,70 @@
+/* special media for buttons */
+@media (max-width: 350px) { 
+	.btn-1{padding: 10px 18px;}
+    .btn-2{padding: 10px 18px;}
+    .btn-3{padding: 9px 17px;} 
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+	
+	.mb-50px-xs{margin-bottom: 50px;}
+	
+}
+
+/* Medium devices (tablets, 768px and up)  */
+@media (max-width: 767px) {
+	
+	.mb-10px-sm{margin-bottom: 10px;}
+	
+	.mb-50px-sm{margin-bottom: 50px;}
+	
+	.title-h{font-size: 35px; line-height: 38px;}
+
+	.title-h .circle-1{top: -37px; width: 10px; height: 10px;}
+
+	.title-h .circle-2{top: -45px; width: 26px; height: 26px;}
+	
+	
+	.box-padding{padding: 100px 30px;}
+	
+	.title-p{margin: 0 10% 70px 10%;}
+	
+ 
+	
+	h1{font-size: 42px; line-height: 43px;}
+	h2{font-size: 35px; line-height: 38px;}
+	h3{font-size: 30px; line-height: 35px;}
+	h4{font-size: 25px; line-height: 30px;}
+	h5{font-size: 20px; line-height: 26px;}
+	h6{font-size: 17px; line-height: 23px;}
+	
+	.footer-area,
+	.footer-area p{text-align: center !important;}
+}
+
+/* Large devices (desktops, 992px and up)  */
+@media (max-width: 991px) {	
+	
+	.navbar .navbar-brand{padding: 20px 0;}
+	
+	.navbar .bars{display: block;}
+	
+	.navbar-nav{background-color: #fff; padding: 20px}
+	
+	.navbar .navbar-nav .nav-link{color: #333; display: inline-block; padding: 15px;}
+	
+	.image-back-right,
+	.image-back-left,
+	.image-back-center{
+		position: relative;
+		height: 400px;
+		left: 0;
+		width: 100%;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)  */
+@media (max-width: 1200px) { 
+}
