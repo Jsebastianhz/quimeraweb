@@ -4,9 +4,9 @@ import { BodyComponent } from './paginas/body/body.component';
 import { SobremiComponent } from './paginas/sobremi/sobremi.component';
 
 const routes: Routes = [
-  {path:'', component:BodyComponent},
-  {path:'sobremi', component:SobremiComponent},
-  {path:'**', pathMatch:'full', redirectTo: '/'}
+  {path: '', component:BodyComponent},
+  {path: 'sobremi', component:SobremiComponent},
+  {path: '**', pathMatch:'full', redirectTo: '/'}
 
 ];
 
@@ -14,6 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { 
-
-}
+export class AppRoutingModule { }
