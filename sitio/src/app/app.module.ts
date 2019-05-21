@@ -8,6 +8,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { BodyComponent } from './paginas/body/body.component';
 import { SobremiComponent } from './paginas/sobremi/sobremi.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 
@@ -18,6 +19,7 @@ import { ContactoComponent } from './paginas/contacto/contacto.component';
     BodyComponent,
     SobremiComponent,
     ContactoComponent,
+    FooterComponent,
 
 
   ],
