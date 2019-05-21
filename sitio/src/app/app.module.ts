@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { BodyComponent } from './paginas/body/body.component';
 import { SobremiComponent } from './paginas/sobremi/sobremi.component';
+import { ContactoComponent } from './paginas/contacto/contacto.component';
 
 
 
@@ -16,6 +17,7 @@ import { SobremiComponent } from './paginas/sobremi/sobremi.component';
     HeaderComponent,
     BodyComponent,
     SobremiComponent,
+    ContactoComponent,
 
 
   ],
