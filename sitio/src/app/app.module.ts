@@ -9,6 +9,8 @@ import { BodyComponent } from './paginas/body/body.component';
 import { SobremiComponent } from './paginas/sobremi/sobremi.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { NosotrosComponent } from './paginas/nosotros/nosotros.component';
+import { PortafolioComponent } from './paginas/portafolio/portafolio.component';
 
 
 
@@ -20,6 +22,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     SobremiComponent,
     ContactoComponent,
     FooterComponent,
+    NosotrosComponent,
+    PortafolioComponent,
 
 
   ],
