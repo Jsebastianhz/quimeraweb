@@ -1,0 +1,10 @@
+export interface InfoPagina{
+  titulo?:string;
+  email?:string;
+  facebook?:string;
+  instagram?:string;
+  telefono?:string;
+  equipo_trabajo?:any[];
+}
+
+
