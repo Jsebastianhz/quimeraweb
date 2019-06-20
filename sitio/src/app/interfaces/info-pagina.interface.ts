@@ -5,6 +5,7 @@ export interface InfoPagina{
   instagram?:string;
   telefono?:string;
   equipo_trabajo?:any[];
+  portafolio?:any[];
 }
 
 
