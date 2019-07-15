@@ -58,115 +58,35 @@
           <div class="container">
             <h1 class="title-h fw-200 mb-10px">
               Nuestro <span class="fw-600">Equipo</span>
-            </h1>
-            <p class="title-p fs-15 color-666">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </h1>            
+            <br>
             <div class="row">
-              <div class="col-md-4">
+              <div *ngFor="let persona of infoService.equipo" class="col-md-4">
                 <div class="mb-50px-sm team-single">
                   <div class="team-image d-inline-block o-hidden p-relative">
-                    <img alt="img" src="assets/images/team-1.jpg" class="ml-auto mr-auto transition-4">
+                    <img alt="img" [src]="persona.url" class="ml-auto mr-auto transition-4">
                     <div class="overlay-bg p-absolute transition-3">
                       <div class="p-absolute">
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-facebook"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-twitter"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-instagram"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto" href=""><i class="fa fa-behance"></i> </a>
+                        <a traget="_blank" class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href="{{ persona.facebook }}"><i class="fa fa-facebook"></i> </a>
+                        <a traget="_blank" class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href="{{ persona.twitter }}"><i class="fa fa-twitter"></i> </a>
+                        <a traget="_blank" class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href="{{ persona.instagram }}"><i class="fa fa-instagram"></i> </a>
                       </div>
                     </div>
                   </div>
-                  <h5 class="fw-40 mt-20px mb-5px">Joan Hernandez</h5>  
-                  <span class="color-red fs-15">Desarrollador web</span>
+                  <h5 class="fw-40 mt-20px mb-5px">{{ persona.nombre }}</h5>  
+                  <span class="color-red fs-15">{{ persona.cargo }}</span>
+                  <br>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="mb-50px-sm team-single">
-                  <div class="team-image d-inline-block o-hidden p-relative">
-                    <img alt="img" src="assets/images/team-manuel.jpg" class="ml-auto mr-auto transition-4">
-                    <div class="overlay-bg p-absolute transition-3">
-                      <div class="p-absolute">
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-facebook"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-twitter"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-instagram"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto" href=""><i class="fa fa-behance"></i> </a>
-                      </div>
-                    </div>
-                  </div>
-                  <h5 class="fw-40 mt-20px mb-5px">Manuel Vargas</h5>  
-                  <span class="color-red fs-15">Desarollador web</span>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="team-single">
-                  <div class="team-image d-inline-block o-hidden p-relative">
-                    <img alt="img" src="assets/images/team-2.jpg" class="ml-auto mr-auto transition-4">
-                    <div class="overlay-bg p-absolute transition-3">
-                      <div class="p-absolute">
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-facebook"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-twitter"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-instagram"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto" href=""><i class="fa fa-behance"></i> </a>
-                      </div>
-                    </div>
-                  </div>
-                  <h5 class="fw-40 mt-20px mb-5px">Juan Lopez</h5>  
-                  <span class="color-red fs-15">Diseñador</span>
-                </div>
-              </div>
+
+
+
+
+              
+
+
             </div>
-            <div class="row equipo-fila2">
-              <div class="col-md-4">
-                <div class="mb-50px-sm team-single">
-                  <div class="team-image d-inline-block o-hidden p-relative">
-                    <img alt="img" src="assets/images/team-1.jpg" class="ml-auto mr-auto transition-4">
-                    <div class="overlay-bg p-absolute transition-3">
-                      <div class="p-absolute">
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-facebook"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-twitter"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-instagram"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto" href=""><i class="fa fa-behance"></i> </a>
-                      </div>
-                    </div>
-                  </div>
-                  <h5 class="fw-40 mt-20px mb-5px">Melissa Ochoa</h5>  
-                  <span class="color-red fs-15">Desarrollador web</span>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="mb-50px-sm team-single">
-                  <div class="team-image d-inline-block o-hidden p-relative">
-                    <img alt="img" src="assets/images/team-3.jpg" class="ml-auto mr-auto transition-4">
-                    <div class="overlay-bg p-absolute transition-3">
-                      <div class="p-absolute">
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-facebook"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-twitter"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-instagram"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto" href=""><i class="fa fa-behance"></i> </a>
-                      </div>
-                    </div>
-                  </div>
-                  <h5 class="fw-40 mt-20px mb-5px">Brandon Reyes</h5>  
-                  <span class="color-red fs-15">Desarollador web</span>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="team-single">
-                  <div class="team-image d-inline-block o-hidden p-relative">
-                    <img alt="img" src="assets/images/team-2.jpg" class="ml-auto mr-auto transition-4">
-                    <div class="overlay-bg p-absolute transition-3">
-                      <div class="p-absolute">
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-facebook"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-twitter"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto mb-5px" href=""><i class="fa fa-instagram"></i> </a>
-                        <a class="color-fff color-fff-hvr bg-blue-hvr radius-50px d-block fs-18 ml-auto mr-auto" href=""><i class="fa fa-behance"></i> </a>
-                      </div>
-                    </div>
-                  </div>
-                  <h5 class="fw-40 mt-20px mb-5px">Karen Mejia</h5>  
-                  <span class="color-red fs-15">Diseñador</span>
-                </div>
-              </div>
-            </div>            
+           
           </div>
         </section>
 

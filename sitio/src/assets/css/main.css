@@ -1027,7 +1027,7 @@ h6{
 					9-work-area
 ----------------------------------------------------*/
 .work-area{
-	background-image: url("../images/nnn.jpg");
+	background-color: #1d1d1d;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat
@@ -1050,7 +1050,7 @@ h6{
 }
 
 .work-area .overlay-bg{
-	background:linear-gradient(45deg, rgba(255, 36, 98, 0.75) 0%, rgba(144, 30, 218, 0.95) 90%);
+	background:linear-gradient(45deg, rgb(255, 34, 98) 0%, rgba(35, 4, 56, 0.38) 90%);
     top: 0;
     left: 0;
     right: 0;

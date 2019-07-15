@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPagina } from 'src/app/interfaces/info-pagina.interface';
+import { InfopaginaService } from 'src/app/services/infopagina.service';
+
 
 @Component({
   selector: 'app-nosotros',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NosotrosComponent implements OnInit {
 
-  constructor() { }
+  constructor(public infoService: InfopaginaService ) { }
 
   ngOnInit() {
   }
