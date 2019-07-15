@@ -9,6 +9,10 @@ import { InfopaginaService } from 'src/app/services/infopagina.service';
 })
 export class ContactoComponent implements OnInit {
 
+
+
+
+
   constructor( public servicio : InfopaginaService ) { }
 
   ngOnInit() {

@@ -1,3 +1,29 @@
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.3'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="403519563525476"
+  theme_color="#211f20"
+  logged_in_greeting="¡Hola! como podemos ayudarte?"
+  logged_out_greeting="¡Hola! como podemos ayudarte?">
+</div>
 
 <section class="contact-intro">
     <div class="overlay-bg-40 sec-padding flex-center"> 
@@ -38,7 +64,7 @@
       </div>
       <div class="col-md-6">
         <div class="contact-form">
-          <form class="form" id="contact-form" method="post" action="contact.php">
+          <form class="form" id="contact-form" >
             <div class="messages"></div>
             <div class="controls">
               <div class="row"> 
@@ -77,3 +103,5 @@
     </div>
       </div>   
   </section>
+
+ 
