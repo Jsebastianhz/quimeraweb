@@ -10,7 +10,7 @@ import { InfopaginaService } from 'src/app/services/infopagina.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( public Infopagina : InfopaginaService ) { }
+  constructor( public servicio : InfopaginaService ) { }
 
   ngOnInit() {
   }

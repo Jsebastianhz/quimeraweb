@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { getLocaleDateFormat, getLocaleDayNames } from '@angular/common';
+import { InfopaginaService } from 'src/app/services/infopagina.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,9 +9,14 @@ import { getLocaleDateFormat, getLocaleDayNames } from '@angular/common';
 })
 export class FooterComponent implements OnInit {
 
-  desarrollador = "Quimera It";
-  fecha = getLocaleDateFormat;
-  constructor() { }
+
+
+fecha : number = new Date().getFullYear();
+  
+
+
+
+  constructor( public servicio : InfopaginaService ) { }
 
   ngOnInit() {
   }

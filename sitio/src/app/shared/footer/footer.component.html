@@ -9,11 +9,11 @@
 				  <div class="col-md-5 offset-md-1">
 					  <div class="">
 						  <h3 class="color-fff">Hablemos</h3>
-						  <p class="color-ddd big-p"><i class="fa fa-envelope mr-15px color-red"></i>contacto@quimera-it.com</p>
+						  <a href="mailto:{{ servicio.info.email }}" target="_blank"> <p class="color-ddd big-p"><i class="fa fa-envelope mr-15px color-red"></i>{{ servicio.info.email }}</p></a>
 						  <p class="mb-20px color-ddd big-p"><i class="fa fa-map-marker mr-15px color-red"></i>Pereira - Risaralda, Colombia</p>
-						  <a target="_blank" href="https://www.facebook.com/quimeracolombia/" class="color-fff color-red-hvr mr-10px"><i class="fa fa-facebook"></i> </a>
-						  <a target="_blank" href="https://www.instagram.com/quimerait/" class="color-fff color-red-hvr mr-10px"><i class="fa fa-instagram"></i> </a>
-						  <a target="_blank" href="https://www.linkedin.com/company/quimeraweb/" class="color-fff color-red-hvr mr-10px"><i class="fa fa-linkedin"></i> </a>
+						  <a target="_blank" [href]="servicio.info.facebook" class="color-fff color-red-hvr mr-10px"><i class="fa fa-facebook"></i> </a>
+						  <a target="_blank" [href]="servicio.info.facebook" class="color-fff color-red-hvr mr-10px"><i class="fa fa-instagram"></i> </a>
+						  <a target="_blank" [href]="servicio.info.linkedin" class="color-fff color-red-hvr mr-10px"><i class="fa fa-linkedin"></i> </a>
 					  </div>
 				  </div>
 			  </div>
@@ -30,11 +30,13 @@
 
 				<a routerLink="nosotros" class="d-inline-block color-fff color-333-hvr mr-15px mb-10px-sm">Quienes somos</a>
  
+				<a routerLink="portafolio" class="d-inline-block color-fff color-333-hvr mr-15px mb-10px-sm">Portafolio</a>
+
             <a routerLink="contacto" class="d-inline-block color-fff color-333-hvr mr-15px mb-10px-sm">Contacto</a>
 
           </div>
           <div class="col-md-6 text-right">
-            <p class="mt-5px mb-0px color-eee fw-500">© 2019 Desarrollado por  <strong class="color-fff fw-600">{{ desarrollador }}</strong> </p>
+            <p class="mt-5px mb-0px color-eee fw-500">© {{ fecha }} Desarrollado con <i class="fa fa-heart"></i> por  <strong class="color-fff fw-600">{{ servicio.info.titulo }}</strong> </p>
           </div>
         </div>
       </div>
