@@ -1,5 +1,34 @@
 $(function () {
     
+$('.btn-mail').click(function(){
+    var nombre = $('.nombre').val().trim();
+    var email = $('.email').val().trim();
+    var asunto = $('.asunto').val().trim();
+    var mensaje = $('.mensaje').val().trim();
+
+
+    if( email == "" ){
+
+        alert('campos necesarios');
+    }else{
+
+        $.ajax({
+            type : "POST",
+            url  : "mail.php", 
+            data : "nombre="+nombre+"&telefono="+telefono+"&email="+email+"&asunto="+asunto+"&mensaje="+mensaje,
+            success:function(){
+            swal("!Ok!", "Consulta enviada, recibiras una respuesta lo mas pronto posible", "success");
+            alert('enviado');
+            }
+         })
+
+    }
+
+
+
+
+})
+
     "use strict";
 	 /* smooth scroll
   -------------------------------------------------------*/
