@@ -1,21 +1,3 @@
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v3.3'
-    });
-  };
-
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <!-- Your customer chat code -->
 <div class="fb-customerchat"
   attribution=setup_tool
@@ -51,7 +33,7 @@
     <p class="title-p">
     </p>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-3">
         <div class="address">		
           <p class="mb-30px"><i class="color-red bg-f4f4f4 radius-50 fs-30 mr-10px text-center icon-map"></i>Pereira - Risaralda, Colombia</p>
         </div>
@@ -62,7 +44,12 @@
           <p class="mb-30px"><i class="color-red bg-f4f4f4 radius-50 fs-30 mr-10px text-center icon-envelope"></i>contacto@quimera-it.com</p>
         </div>
       </div>
-      <div class="col-md-6">
+    <div class="col-md-4">
+        <div class="fb-page" data-href="https://www.facebook.com/quimeracolombia" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/quimeracolombia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/quimeracolombia">quimera</a></blockquote></div>
+    </div>
+      <div class="col-md-5">
+
+
         <div class="contact-form">
           <form class="form" id="contact-form"  >
             <div class="messages"></div>
@@ -70,26 +57,22 @@
               <div class="row"> 
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input id="form_name" class="form-control nombre" type="text" name="Nombre" placeholder="Nombre"  required >
-                    <div class="help-block with-errors color-orange"></div>
+                    <input id="form_name" class="form-control nombre" type="text"  placeholder="Nombre"  required >
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input id="form_email" class="form-control email" type="email" name="email" placeholder="Email" required >
-                  <div class="help-block with-errors color-orange"></div>
+                    <input id="form_email" class="form-control email" type="email"  placeholder="Email" required >
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <input id="form_subject" class="form-control asunto" type="text" name="Asunto" placeholder="Asunto" required>
-                    <div class="help-block with-errors"></div>
+                    <input id="form_subject" class="form-control asunto" type="text"  placeholder="Asunto" required>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <textarea id="form_message" class="form-control mensaje" name="message" placeholder="Mensaje" rows="6" required ></textarea>
-                    <div class="help-block with-errors color-orange"></div>
+                    <textarea id="form_message" class="form-control mensaje"  placeholder="Mensaje" rows="6" required ></textarea>
                   </div>
                 </div>
                 <div class="col-md-12">
@@ -97,7 +80,7 @@
                 </div>
               </div>
             </div>
-          </form>    
+          </form>  
         </div>
       </div>
     </div>
